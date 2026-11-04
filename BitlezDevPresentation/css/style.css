@@ -1,0 +1,165 @@
+/* Configuración general */
+
+:root{
+    --fondo: #090817;
+    --fondo-secundario: #151426;
+    --cian: #08CBEA;
+    --verde: #00E84B;
+    --amarillo: #E5F000;
+    --blanco: #FFFFFF;
+    --gris: #A5A5B5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--fondo);
+    color: var(--blanco);
+    font-family: Arial, sans-serif;
+}
+
+/* encabezado y navegación bien facha */
+
+header{
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(9, 8, 23, 0.9);
+    border-bottom: 1px solid rgba(8, 203, 234, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+}
+
+header h1{
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: var(--cian);
+}
+
+nav a{
+    color: var(--gris);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: var(--cian);
+}
+
+/* Secciones GENERALES */
+
+section{
+    padding: 100px 12%;
+    min-height: 300px;
+}
+
+section h2{
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+section p{
+    color: var(--gris);
+    font-size: 1.05rem;
+}
+
+/* El maravilloso INICIO */
+
+#inicio{
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: radial-gradient(circle at 80% 50%, rgba(8, 203, 234, 0.10),ransparent 40%);
+}
+
+#inicio h2{
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+}
+
+#inicio span{
+    color: var(--cian);
+}
+
+#inicio p{
+    font-size: 1.25rem;
+    margin-top: 15px;
+}
+
+#inicio img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 25px 0;
+}
+
+/* El Sobre mi */
+
+#sobre-mi{
+    background-color: var(--fondo-secundario);
+}
+
+/* Mis simples pero bonitos proyectos */
+
+#proyectos{
+    background-color: var(--fondo-secundario);
+}
+
+/* mi contacto */
+
+#contacto{
+ background-color: var(--fondo-secundario);
+}
+
+/* El footer, aca metemo copyright */
+
+footer{
+    text-align: center;
+    padding: 25px;
+    background-color: var(--fondo);
+    border-top: 1px solid rgba(8, 203, 234, 0.15);
+}
+
+footer p{
+    color: var(--gris);
+    font-size: 0.85rem;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media(max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    section{
+        padding: 75px 8%;
+    }
+
+    #inicio{
+        min-height: 75vh;
+    }
+}
