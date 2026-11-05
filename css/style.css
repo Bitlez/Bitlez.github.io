@@ -122,6 +122,22 @@ section p{
     max-width: 850px;
 }
 
+#sobre-mi p2{
+    color: var(--verde);
+    background-color: var(--fondo);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    max-width: 850px;
+    padding: 12px 18px;
+    border-radius: 6px;
+}
+
+#sobre-mi p2 span{
+    color: var(--amarillo);
+    font-weight: bold;
+}
+
 #sobre-mi p span{
     color: var(--cian);
     font-weight: bold;
@@ -243,4 +259,17 @@ footer p{
     transform: translateY(-8px);
     border-color: var(--cian);
     box-shadow: 0 8px 25px rgba(8, 203, 234, 0.12);
+}
+
+/* Sección de contacto */
+
+#contacto a{
+    color: var(--cian);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#contacto a:hover{
+    color: var(--verde);
 }
