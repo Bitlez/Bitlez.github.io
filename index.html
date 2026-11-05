@@ -22,7 +22,10 @@
             <h2>Hola, soy <span>Bitlez</span></h2>
             <p>Desarrollador independiente de Argentina</p>
 
+            <div class="logo-container">
             <img src="assets/LogoBitlez.jpg" alt="Logo oficial de Bitlez">
+
+            <img src="assets/gem-alert.jpg" class="meme-hover" alt="Gem Alert">
         </section>
 
         <section id="sobre-mi">
@@ -86,7 +89,7 @@
         </div>
 
         <!-- Just One Opportunity -->
-        <div class="tarjeta-proyecto">
+        <div class="tarjeta-proyecto" id="tarjeta-just-one" onclick="abrirJustOne()" role="button" tabindex="0">
             <img src="assets/proyectos/JustOneOpportunity.jpeg" alt="Just One Opportunity">
 
             <div class="contenido-proyecto">
@@ -99,6 +102,10 @@
 
     </div>
         </section>
+
+        <audio id="sonido-xp" preload="auto">
+            <source src="assets/sonido/minecraft_exp.mp3" type="audio/mpeg">
+        </audio>
 
         <section id="contacto">
             <h2>Contacto</h2>

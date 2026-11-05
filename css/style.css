@@ -47,7 +47,7 @@ header h1{
 }
 
 nav a{
-    color: var(--gris);
+    color: var(--verde);
     text-decoration: none;
     font-size: 0.95rem;
     transition: 0.3s;
@@ -99,13 +99,53 @@ section p{
     margin-top: 15px;
 }
 
-#inicio img{
+/* Logo principal */
+
+.logo-container{
+    position: relative;
+    display: inline-block;
+}
+
+#inicio .logo-container > img:first-child{
     width: 250px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
     margin: 25px 0;
+}
+
+/* Imagen sorpresa */
+
+.meme-hover{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    left: calc(100% + 20px);
+    top: 50%;
+    opacity: 0;
+    transform: translateY(-50%) scale(0.7);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* Aparición al pasar el cursor */
+
+.logo-container:hover .meme-hover{
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}
+
+/* Efecto de iluminación del nombre Bitlez */
+
+#inicio span{
+    transition: 0.3s ease;
+    cursor: default;
+}
+
+#inicio span:hover{
+    text-shadow: 0 0 8px var(--verde),
+                 0 0 18px rgba(8, 203, 234, 0.5);
 }
 
 /* El Sobre mi */
@@ -272,4 +312,8 @@ footer p{
 
 #contacto a:hover{
     color: var(--verde);
+}
+
+#tarjeta-just-one{
+    cursor: pointer;
 }
