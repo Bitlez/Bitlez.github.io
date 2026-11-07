@@ -395,13 +395,13 @@ footer p{
     margin: 35px 0;
 }
 
-.galeria-worms{
+.galeria-proyecto-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.galeria-worms img{
+.galeria-proyecto-grid img{
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: contain;
@@ -410,7 +410,7 @@ footer p{
     transition: 0.3s ease;
 }
 
-.galeria-worms img:hover{
+.galeria-proyecto-grid img:hover{
     transform: scale(1.03);
 }
 
@@ -436,7 +436,7 @@ footer p{
 
 /* pie de pagina */
 
-#encabezado-proyecto + .detalle-proyecto + footer{
+footer{
     text-align: center;
     padding: 30px;
     margin-top: 50px;
@@ -455,7 +455,7 @@ footer p{
         width: 90%;
     }
 
-    .galeria-worms{
+    .galeria-proyecto-grid{
         grid-template-columns: 1fr;
     }
 
